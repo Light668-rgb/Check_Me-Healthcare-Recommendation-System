@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Check_Me Healthcare</a>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="/about">About</a>
+        <a href="/blog" class="active">Blog</a>
+        <a href="/developer">Developer</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Main Blog Content -->
+
+    <div class="container mt-5 pt-5">
+      <!-- Floating image on the right -->
+      <img src="{{ url_for('static', filename='images/Placeholder.png') }}" alt="Placeholder Image" class="about-image d-none d-md-block">
+
+    <div class="container mt-5 pt-5">
+      <div class="row g-4">
+
+        <!-- Title + Intro -->
+        <div class="col-md-4">
+          <section class="section-box">
+            <h2 class="h5">Building a Symptom-Based Disease Diagnosis Web App</h2>
+            <p><em>In the age of technology and information, access to accurate and timely healthcare is more critical than ever...</em></p>
+          </section>
+        </div>
+
+        <!-- The Problem -->
+        <div class="col-md-4">
+          <section class="section-box">
+            <h3>The Problem</h3>
+            <p>People often experience symptoms and want quick answers about their health concerns. Differentiating between diseases with overlapping symptoms can be challenging.</p>
+          </section>
+        </div>
+
+        <!-- The Solution -->
+        <div class="col-md-4">
+          <section class="section-box">
+            <h3>The Solution</h3>
+            <ol>
+              <li><strong>Symptom Input:</strong> Users enter symptoms via an intuitive interface.</li>
+              <li><strong>Machine Learning Model:</strong> A Decision Tree Classifier predicts likely diseases.</li>
+              <li><strong>Prediction:</strong> Instant feedback on potential health concerns.</li>
+              <li><strong>Additional Info:</strong> Descriptions, precautions, and lifestyle tips accompany each prediction.</li>
+            </ol>
+          </section>
+        </div>
+
+        <!-- Key Features -->
+        <div class="col-md-4">
+          <section class="section-box">
+            <h3>Key Features</h3>
+            <ul>
+              <li>User-Friendly Interface</li>
+              <li>Accurate Predictions</li>
+              <li>Comprehensive Information</li>
+              <li>Educational Content</li>
+            </ul>
+          </section>
+        </div>
+
+        <!-- (Empty placeholder to keep grid uniform if you want 3-per-row) -->
+        <div class="col-md-4 d-none d-md-block"></div>
+
+        <!-- Conclusion (full width) -->
+        <div class="col-12">
+          <section class="section-box">
+            <h3>Conclusion</h3>
+            <p>Our Symptom-Based Disease Diagnosis Web App brings the power of machine learning and healthcare information to your fingertips. It’s a step forward in making healthcare more accessible and user-centric worldwide.</p>
+          </section>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- … your footer + scripts as before … -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
